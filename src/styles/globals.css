@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+	.full-screen {
+		@apply w-screen h-screen;
+		max-width: 100%;
+	  }
+
+  /* Button */
+  .btn-primary {
+    @apply transition duration-500 ease-in-out bg-blue-500 transform hover:-translate-y-2 text-black hover:text-white inline-block font-medium py-2 px-8 rounded-full text-lg;
+  }
+  .btn-secondary {
+    @apply transition duration-500 ease-in-out transform hover:-translate-y-2 bg-blue-200 text-white hover:text-white inline-block font-medium py-2 px-8 rounded-full text-lg;
+  }
+  .btn {
+    @apply transition duration-500 ease-in-out transform hover:-translate-y-2 text-blue-200 hover:bg-blue-200 hover:text-white inline-block font-medium py-2 px-8 rounded-full text-lg;
+  }
+
+  /* Pages */
+  .page {
+    @apply md:py-16 bg-gray-100;
+  }
+
+  /* Paper */
+  .paper {
+    @apply rounded-xl border shadow-2xl;
+  }
+  .paper-form {
+    @apply paper w-full md:w-96 mx-auto px-16 py-8 bg-gray-50;
+  }
+}
